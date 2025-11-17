@@ -74,5 +74,7 @@
 
 ### Advanced Analytics
 - [ ] Task: Integrate machine learning for treatment response prediction.
+- [ ] Task: Look deeper in the dataset to explore why some patients have fewer time points.
+    - [ ] Task: Identify variants that may be more aggressive and resulted in early patient death. 
 
----
+
