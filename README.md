@@ -18,7 +18,29 @@ This code aims to identify potential variant allele frequency changes that serve
 **[Source Code](vca_pipeline.ipynb)** - Jupyter notebook containing the VCA pipeline.
 
 
+## Project Planning Documents
+
+**[TODO List](TODO.md)** - Comprehensive development roadmap with prioritized tasks.
+
+**[PCR/NGS Diagnostics Roadmap](dev/simulating_PCR.ipynb)** - PCR design for clinical diagnostic development.
+
+
+
+## Data
+
+**Source:** NCBI SRA BioProject [PRJNA714799](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA714799)
+
+**Samples:** Circulating tumor DNA from colorectal cancer patients collected at multiple timepoints:
+- Pre-treatment (baseline)
+- During treatment (first follow-up)
+- Post-treatment (final timepoint)
+
+
 ## Installation
+
+### Prerequisites
+- [Anaconda](https://www.anaconda.com) or Miniconda
+- ~50 GB disk space for reference genome and sequencing data
 
 To install this repository and all its dependencies, we recommend using [Anaconda](https://www.anaconda.com).
 
@@ -33,3 +55,37 @@ conda env create -f environment.yml
 conda activate vca_env
 ```
 
+
+```
+ctDNA_analysis/
+├── 📁 src/                                                   # Core source code
+│   ├── main_code.py                                          # (development)
+│   └── 📁 utils/                                             # Utility functions
+│       ├── imports.py                                        # Central import management (development)
+├── 📁 pipelines/                                             # (development) Complete analysis workflows
+│   ├── single_patient_pipeline.py                            # End-to-end single patient analysis (development)
+│   └── batch_processing_pipeline.py                          # Multi-patient batch processing (planned)
+├── 📁 notebooks/                                             # Jupyter notebooks
+│   ├── variant_calling_analysis_cleaned.ipynb                # Main analysis notebook
+│   └── 📁 dev/                                               # Development notebooks
+│       └── simulating_PCR.ipynb                              # PCR simulation experiments
+├── 📁 docs/                                                  # Documentation
+│   ├── user_guide.md                                         # Complete user manual (planned)
+│   ├── TODO.md                                               # Development roadmap 
+├── 📁 data/                                                  # Data directory (gitignored)
+│   ├── 📁 raw/                                               # Raw sequencing data (SRA downloads)
+│   ├── 📁 reference/                                         # Reference genomes (GRCh38)
+│   ├── 📁 aligned/                                           # BAM alignment files
+│   ├── 📁 variants/                                          # VCF variant call files
+│   └── 📁 metadata/                                          # SRA metadata tables
+├── 📁 tests/                                                 # Unit tests (planned)
+│   ├── test_file.py                                          # (development) Metadata tests
+├── environment.yml                                           # Conda environment file
+├── LICENSE                                                   # BSD 3-Clause License
+├── .gitignore                                                # Git ignore patterns
+└── README.md                                                 # Project documentation
+```
+
+## License
+
+This project is licensed under the BSD 3-Clause License - see the LICENSE file for details.
