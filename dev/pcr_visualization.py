@@ -18,7 +18,6 @@ def PCRVisualization(primers, wildtype_fasta_path, mutant_fasta_path, mutation_n
     """
     output_directory = Path(output_directory)
     output_directory.mkdir(parents=True, exist_ok=True)
-    print("Running in-silico PCR simulations")
     reactions = [
         ("WT primers + WT template", primers["forward_wildtype"]["sequence"], primers["reverse_common"]["sequence"], wildtype_fasta_path),
         ("WT primers + mutant template", primers["forward_wildtype"]["sequence"], primers["reverse_common"]["sequence"], mutant_fasta_path),
