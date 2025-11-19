@@ -22,6 +22,19 @@ This code aims to identify potential variant allele frequency changes that serve
 
 **[TODO List](TODO.md)** - Comprehensive development roadmap with prioritized tasks.
 
+## Digital PCR Assay Design
+
+**[dPCR Design Notebook (development)](dev/dpcr_design_simulation.ipynb)** - Simulate digital PCR assays for absolute quantification of ctDNA.
+
+**Features:**
+- Allele-specific probe design (FAM/VIC dual-color assays)
+- Droplet partitioning simulation using Poisson statistics
+- 2D fluorescence scatter plots
+- Limit of detection (LOD) calculations (down to 0.01% VAF)
+- Serial monitoring simulation for treatment response
+
+<img src="docs/KRAS_dpcr_droplets.png" alt="dPCR 2D plot" width="400" />
+
 **[PCR/NGS Diagnostics Roadmap](dev/pcr_design_simulation.ipynb)** - PCR design for clinical diagnostic development.
 
 <img src="docs/KRAS_mut_gel_electrophoresis.png" alt="VCA pipeline" width="300" />

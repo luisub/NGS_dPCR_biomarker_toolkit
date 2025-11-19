@@ -29,6 +29,13 @@
     - [ ] Task: Implement parallel processing for faster alignment and variant calling.
     - [ ] Task: Create summary statistics table for all processed patients.
 
+## Digital PCR Assay Design
+- [ ] Task: Design allele-specific TaqMan probes (FAM for mutant, VIC for wildtype).
+- [ ] Task: Simulate droplet partitioning using Poisson statistics (20,000 droplets).
+- [ ] Task: Create 2D fluorescence scatter plot showing four quadrants (WT+/MUT+, WT+/MUT-, WT-/MUT+, negative).
+- [ ] Task: Calculate limit of detection (LOD) for rare variants (target: 0.01% VAF sensitivity).
+- [ ] Task: Simulate serial ctDNA monitoring during treatment (complete response, partial response, progression).
+
 ### Gene Panel Expansion
 - [ ] Task: Expand analysis beyond KRAS to include full colorectal cancer gene panel.
     - [ ] Task: Add TP53, APC, PIK3CA, BRAF, and NRAS variant detection.
