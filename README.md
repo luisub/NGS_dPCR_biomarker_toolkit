@@ -18,19 +18,17 @@ This code aims to identify potential variant allele frequency changes that serve
 **[Source Code](vca_pipeline.ipynb)** - Jupyter notebook containing the VCA pipeline.
 
 
-## Project Planning Documents
+## Droplet Digital PCR  (ddPCR) Assay Design
 
-**[TODO List](TODO.md)** - Comprehensive development roadmap with prioritized tasks.
+**[ddPCR Design Notebook (development)](dev/dpcr_rare_mutation_detection.ipynb)** - Simulate Droplet Digital PCR assays for absolute quantification of ctDNA.
 
-## Digital PCR Assay Design
-
-**[dPCR Design Notebook (development)](dev/dpcr_rare_mutation_detection.ipynb)** - Simulate digital PCR assays for absolute quantification of ctDNA.
-
-**Features:**
 - Allele-specific probe design (FAM/VIC dual-color assays)
 - Droplet partitioning simulation using Poisson statistics
-- 2D fluorescence scatter plots
 - Limit of detection (LOD) calculations (down to 0.01% VAF)
+- 1D Amplitude plots
+
+<img src="docs/ddPCR.png" alt="VCA pipeline" width="600" />
+
 
 ## PCR Assay Design
 
@@ -39,6 +37,9 @@ This code aims to identify potential variant allele frequency changes that serve
 <img src="docs/KRAS_mut_gel_electrophoresis.png" alt="VCA pipeline" width="300" />
 
 
+## Project Planning Documents
+
+**[TODO List](TODO.md)** - Comprehensive development roadmap with prioritized tasks.
 
 
 ## Data
