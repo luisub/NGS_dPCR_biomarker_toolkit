@@ -32,7 +32,9 @@ This code aims to identify potential variant allele frequency changes that serve
 - 2D fluorescence scatter plots
 - Limit of detection (LOD) calculations (down to 0.01% VAF)
 
-**[PCR/NGS Diagnostics Roadmap](dev/pcr_design_simulation.ipynb)** - PCR design for clinical diagnostic development.
+## PCR Assay Design
+
+**[PCR Diagnostics](dev/pcr_design_simulation.ipynb)** - PCR design for clinical diagnostic development.
 
 <img src="docs/KRAS_mut_gel_electrophoresis.png" alt="VCA pipeline" width="300" />
 
